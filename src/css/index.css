@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  margin: 5px;
+}
+
+.App {
+  width: 510px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.content {
+  display: none;
+  width: 500px;
+  height: auto;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid white;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.content .card {
+  width: 90%;
+  height: 150px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.content .card .photo {
+  display: block;
+  width: 72px;
+  height: 72px;
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.content .card .photo.male {
+  border: 5px double #1165B3;
+}
+
+.content .card .photo.female {
+  border: 5px double #e912c5;
+}
+
+.content .card .photo img {
+  width: 72px;
+  height: 72px;
+}
+
+.content .card .details {
+  display: block;
+  width: calc(90% - 72px);
+  height: auto;
+  margin: 0 0 0 10px;
+  float: left;
+}
+
+.content .card .details .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.content .card .details p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.content .card .details p .title {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.content .card .details svg {
+  margin: 3px;
+}
+
+.content .movies-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 160px calc(100% - 170px);
+      grid-template-columns: 160px calc(100% - 170px);
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  margin: 5px auto;
+  border: 1px solid #1165B3;
+  border-radius: 5px;
+}
+
+.content .movies-card div.row {
+  width: 100%;
+  height: 25px;
+  border: 1px solid red;
+}
+
+.content .movies-card div .title {
+  display: block;
+  width: 100%;
+  height: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF4D50;
+  overflow: hidden;
+}
+
+.content .movies-card div .title svg {
+  width: 30px;
+  color: #000;
+  margin: 0px;
+}
+
+.content.show {
+  display: block;
+}
+/*# sourceMappingURL=index.css.map */

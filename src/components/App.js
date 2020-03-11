@@ -4,6 +4,7 @@ import { Button } from "antd";
 import ApiWithAxios from './ApiWithAxios';
 import ApiWithFetch from './ApiWithFetch';
 import ApiMovies  from './ApiMovies';
+import ApiFireBase from './ApiFireBase';
 
 // Css
 import "antd/dist/antd.css";
@@ -15,10 +16,10 @@ function App() {
 		{ menu: 'Axios', component: <ApiWithAxios/>},
 		{ menu: 'Fetch', component: <ApiWithFetch/>},
 		{ menu: 'Movies', component: <ApiMovies/>},
-		{ menu: 'Firebase', component: <ApiWithFetch/>},
+		{ menu: 'Firebase', component: <ApiFireBase/>},
 	]
 
-	const [ activeMenu, setActiveMenu ] = useState(2);
+	const [ activeMenu, setActiveMenu ] = useState(3);
 
 	return (
 		<div className="App">

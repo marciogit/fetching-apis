@@ -15,7 +15,6 @@ function ApiFireBase() {
 			.get()
 
 			setMenu(data.docs.map(doc => doc.data()));
-			console.log(data.docs);
 		}
 
 		fetchData();
